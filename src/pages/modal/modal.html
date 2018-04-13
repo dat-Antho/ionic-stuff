@@ -13,7 +13,8 @@
 </ion-header>
 
 <ion-content padding>
-   
-    {{item.amount}}
-
+   <h1>Transaction</h1>
+    <p> De {{item.sender|titlecase}} </p> 
+    <p> à {{item.recipient|titlecase}} </p>
+    <p>{{item.amount|currency:'EUR'}} </p>
 </ion-content>
