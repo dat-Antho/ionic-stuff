@@ -1,0 +1,18 @@
+page-login {
+    #login{
+        background-color:  color($colors,bclogin)
+    }
+    #intro{
+        color: color($colors,light)
+    }
+    .form{
+        ion-input{
+            background-color: rgba(0, 0, 0,0);
+            color: white;            
+        }
+        ion-item{
+            @extend ion-input;
+
+        }
+    }
+}

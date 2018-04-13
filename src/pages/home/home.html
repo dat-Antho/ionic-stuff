@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content padding>
-  <div style="width:98%;margin: 0 auto;text-align:center">
+  <div style="width:95%; margin: 0 auto; padding:0;text-align:center">
     <h1>La monnaie solidaire</h1>
     <p class="lead">DuckCoin, c'est la monnaie qui rend aimable, redonne le sourire et change la face du monde.
     Elle a été faite pour des gens sympas, juste comme toi.</p>
@@ -14,5 +14,16 @@
     </p>
     
   </div>
+
+ 
+  <ion-list>
+      <ion-list-header>
+        Action
+      </ion-list-header>
+      <ion-item *ngFor="let item of list">
+          <button (click)="presentModal(item)" ion-button block >{{item.sender|titlecase}} à donné {{item.amount|currency:"EUR"}} à {{item.recipient|titlecase}} </button>
+      </ion-item>
+     
+    </ion-list>
 
 </ion-content>
