@@ -26,5 +26,9 @@ export class ModalPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ModalPage');
   }
+  dismiss() {
 
+    this.viewCtrl.dismiss();
+
+  }
 }
